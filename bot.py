@@ -9,7 +9,7 @@ def start(updater,context):
 def echo(updater,context):
  usr_msg =updater.message.text
  translator = Translator()
- translation = translator.translate(usr_msg,dest='uz') 
+ translation = translator.translate(usr_msg,dest='eng') 
  updater.message.reply_text(translation.text)
  
 dp =updater.dispatcher.add_handler
